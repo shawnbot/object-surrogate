@@ -1,0 +1,17 @@
+{
+  "name": "object-proxy",
+  "version": "1.0.0",
+  "description": "Proxy objects with custom accessors",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Shawn Allen <shawn.allen@gsa.gov>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "object-assign": "^4.1.0"
+  }
+}
