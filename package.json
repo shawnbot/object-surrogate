@@ -1,6 +1,6 @@
 {
-  "name": "object-proxy",
-  "version": "1.0.0",
+  "name": "object-surrogate",
+  "version": "0.1.0",
   "description": "Proxy objects with custom accessors",
   "main": "index.js",
   "scripts": {
