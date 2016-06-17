@@ -1,13 +1,17 @@
 'use strict';
 
-const assign = require('object-assign');
+var assign = require('object-assign');
 
-const identity = d => d;
-const functor = d => () => d;
+var identity = function(d) { return d; };
+var functor = function(d) {
+  return function() { return d; };
+};
 
-const objectProxy = function(target, fields, context) {
+var objectProxy = function(target, fields, context) {
   if (Array.isArray(target)) {
-    return target.map(d => objectProxy(d, fields, context));
+    return target.map(function(d) {
+      return objectProxy(d, fields, context);
+    });
   } else if (!target || typeof target !== 'object') {
     throw new Error('expected Object or Array for target; got '
                     + (typeof target));
@@ -18,10 +22,10 @@ const objectProxy = function(target, fields, context) {
                     + (typeof fields));
   }
 
-  let proxy = assign({}, target);
+  var proxy = assign({}, target);
   context = context || proxy;
 
-  Object.keys(fields).forEach(key => {
+  Object.keys(fields).forEach(function(key) {
     var value = fields[key];
     var prop;
     switch (typeof value) {
