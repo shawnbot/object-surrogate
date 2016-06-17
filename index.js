@@ -3,9 +3,6 @@
 var assign = require('object-assign');
 
 var identity = function(d) { return d; };
-var functor = function(d) {
-  return function() { return d; };
-};
 
 var objectProxy = function(target, fields, context) {
   if (Array.isArray(target)) {
