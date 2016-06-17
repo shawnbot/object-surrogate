@@ -1,6 +1,6 @@
 {
   "name": "object-surrogate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Proxy objects with custom accessors",
   "author": "Shawn Allen <shawn.allen@gsa.gov>",
   "repository": "github:shawnbot/object-surrogate",
