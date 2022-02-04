@@ -1,3 +1,5 @@
+_Pssst!_ You should probably use [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) instead.
+
 # object-surrogate
 Create object proxies with property accessors bound to data.
 
